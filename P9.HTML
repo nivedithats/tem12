@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <title>College Admission Form</title>
+        <style>
+            form{
+                background-color: rgb(244, 235, 222);
+                width: 400px;
+                padding: 30px;
+                text-align:left;
+               font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+               box-shadow: blanchedalmond;      
+            }
+            input{
+                width: 100%;
+                padding:15px ;
+                margin-bottom:15px ;
+                border: none;
+                outline: none;
+                border: 1px solid #ccc;
+                margin-top:10px ;
+                border-radius:10px ;
+            }
+            h1{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           }
+           img{
+            width:100% ;
+           }
+           label{
+            color: black;
+           }
+           input:hover{
+            border: 1px solid #02060f ;
+           }
+           .submit{
+            border:none ;
+            background-color: rgb(183, 159, 163);
+            color: white;
+            font-size: medium;
+           }
+           .submit:hover{
+            border: none;
+            background-color: aliceblue;
+            color: #02060f;
+           }
+           .reset{
+            border: none;
+            background-color: rgb(123, 151, 168);
+            font-size: medium;
+            color: white;
+           }
+           .reset:hover{
+            border: none;
+            background-color: rgb(201, 208, 212);
+            color: black;
+
+           }
+
+            
+        </style>
+    </head>
+    <body>
+        <center>
+            
+            <form>
+                <h1>College Admission Form</h1>
+                <center>
+                    <img src="https://img.freepik.com/premium-photo/education-campus-teenage-concept-smiling-teenage-girl-corner-cap-eyeglasses-with-diploma-classmates-back_380164-47353.jpg?w=740" alt="">
+                </center>
+                
+                <p>Please fill in the college application form below if you want to attend our institution.Thank you.</p>
+                <hr> 
+                
+                <label for="First name">First name</label>
+                <input type="text" placeholder="Enter your first name" name="name" id="name" required>
+                
+                <label for="Middle name">Last name</label>
+                <input type="text" placeholder="Enter your last name" id="middle name" required>
+                <label for="b">Date of birth</label>
+                <input type="date" name="date" id="b">
+                <label for="number">Phone number</label>
+                <input type="number" placeholder="enter your phone number" id="number">
+                <label for="address">Home address</label>
+                <input type="text" placeholder="enter your address" id="address">
+                <label for="email">Email</label>
+                <input type="email" placeholder="enter your email" id="email" name="email" required>
+                <label for="pass">Password</label>
+                <input type="password" name="password" placeholder="enter your password" id="pass" required>
+                <hr>
+                <p>Please select the courses you would like to attend</p>
+                <label for="mern">mern fullstack</label>
+                <input type="radio" name="course" id="mern" required><br>
+                
+                <label for="mean">mean fullstack</label>
+                <input type="radio" name="course" id="mean" raquired><br>
+                
+                <label for="python"> python fullsatck</label>
+                <input type="radio" name="course" id="python" requirded><br>
+                
+                <label for="java">java fullsatck</label>
+                <input type="radio" name="course" id="java" required><br>
+                <hr>
+                <p>select your gender</p>
+                <label for="male">male</label>
+                <input type="radio" name="gender" id="male"><br>
+                <label for="female">female</label>
+                <input type="radio" name="gender" id="female"><br>
+                <label for="other">other</label>
+                <input type="radio" name="gender" id="other"><br>
+                <hr>
+                <label for="file">Insert your documents
+                <input type="file"required>
+                <input type="file"required>
+                <input type="file"required>
+                <label for="number">year of Graduation passed out</label>
+                <input type="number" placeholder="enter year">
+                <hr>
+                <label for="submit"></label>
+                <input type="submit" value="submit" class="submit"> <br>
+                <label for="reset"></label>
+                <input type="reset" value="reset" class="reset">
+        </form>
+        </center>
+        
+       
+    </body>
+</html>

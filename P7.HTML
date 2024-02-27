@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>Student details</title>
+        <style>
+            h1{
+                color:blueviolet;
+                font-size: 40px;
+                text-align: center;
+            }
+            form{
+               background-color: rgb(223, 236, 231); 
+               width: 400px;
+               padding:30px ;
+               text-align: left;
+               font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+               box-shadow: blanchedalmond;
+            }
+            input{
+                width: 100%;
+                padding:15px ;
+                margin-bottom:15px ;
+                border: none;
+                outline: none;
+                border: 1px solid #ccc;
+                margin-top:10px ;
+                border-radius:10px ;
+            }
+            label{
+               color:#1c1c1c;
+            }
+            input:hover{
+                border: 1px solid #063cd2;
+            }
+            .button{
+                border: none;
+                background-color: #829eed;
+                color: #fff;
+                font-size: 20px;
+
+            }
+            .button:hover{
+                background-color:transparent;
+                color: #7e818a;
+            }
+            .reset{
+                border: none;
+                background-color: rgb(246, 246, 244);
+                color: #0a0a0d;
+                font-size: 20px;
+            }
+            .reset:hover{
+                background-color: rgb(21, 27, 25);
+                color:rgb(237, 229, 229) ;
+            }
+            img{
+                width: 100%;
+                height: 50%;
+            }
+
+
+            
+        </style>
+    </head>
+    <body>
+        <center>
+            <form>
+                <center>
+                    <img src="https://img.freepik.com/free-vector/academic-excellence-illustration_24877-52359.jpg?w=826&t=st=1708149358~exp=1708149958~hmac=c9a518a7c470a1b760daaf77d39f2a13362682786cccc2f06d96b909e02d56d2" alt="">
+                </center>
+                <h1>Student details</h1>
+                <label for="student name">student name</label>
+                <input type="text" placeholder="Enter your name" id="student name" required>
+                <label for="phone number">phone number</label>
+                <input type="text" name="name"  id="phone number"  placeholder="Enter your phone number" required>
+                <label for="email">email</label>
+                <input type="email" placeholder="Enter your email " id="email" required>
+                <label for="course">course</label>
+                <input type="text" placeholder="enter you course" id="course" required>
+                <label for="address">address</label>
+                <input type="text" placeholder="enter your address" id="address" required>
+                <input type="submit" value="submit" class="button">
+                <input type="reset" value="reset" class="reset">
+                
+    
+            </form>
+        </center>
+    </body>
+</html>

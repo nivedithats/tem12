@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <title>Bank Account Form</title>
+        <style>
+            form{
+               background-color: rgb(207, 230, 242);
+               width: 400px;
+               padding: 30px;
+               text-align:left;
+               font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+               box-shadow: blanchedalmond;      
+            }
+            input{
+                width: 100%;
+                padding:15px ;
+                margin-bottom:15px ;
+                border: none;
+                outline: none;
+                border: 1px solid #ccc;
+                margin-top:10px ;
+                border-radius:10px ;
+            }
+            h1{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+           }
+           h3{
+            background-color: rgb(112, 138, 187);
+            text-align: center;
+           }
+           img{
+            width:100% ;
+           }
+           label{
+            color: black;
+           }
+           input:hover{
+            border: 1px solid #02060f ;
+           }
+           .submit{
+            border:none ;
+            background-color: rgb(127, 151, 196);
+            color: white;
+            font-size: medium;
+           }
+           .submit:hover{
+            border: none;
+            background-color: aliceblue;
+            color: #02060f;
+           }
+           .reset{
+            border: none;
+            background-color: rgb(123, 151, 168);
+            font-size: medium;
+            color: white;
+           }
+           .reset:hover{
+            border: none;
+            background-color: rgb(201, 208, 212);
+            color: black;
+
+           }
+
+            
+        </style>
+    </head>
+    <body>
+       <center>
+        <form>
+            <h1>Bank Account Form</h1>
+            <center>
+                <img src="https://img.freepik.com/premium-photo/bank-operations-bank-building-cart-with-coins-dollars-with-wings-flying-towards-bank_407474-2295.jpg?w=740" alt="">
+            </center>
+            <p>ONLINE ACCOUNT OPENING /APPLICANT INFORMATION FORM FOR RESIDENT INDIVIDUALS</p>
+            <label for="name">Reference no</label>
+            <input type="text" placeholder="enter reference number" id="name" required>
+            <label for="Customer ID">Customer ID</label>
+            <input type="text" id="Customer ID" name="Customer ID" placeholder="enter your Customer ID"><br>
+            <label for="number">Account No</label>
+            <input type="text" placeholder="enter your account no" id="number" required>
+            <label for="type">Account type</label>
+            <input type="text" placeholder="enter you account type" id="type" required>
+
+            <h3>1.Applicant Details:</h3>
+
+            <label for="name">Full name</label>
+            <input type="text" placeholder="enter your fuul name" id="name" required>
+            <label for="name">Father's name</label>
+            <input type="text" placeholder="enter your father's name" id="name" required>
+            <label for="name">Mather's name</label>
+            <input type="text" placeholder="enter your Mather's name" id="name" required>
+            <label for="d">Date of birth</label>
+            <input type="date"  id="d" required>
+            <label for="number">PAN number</label>
+            <input type="Number" placeholder="enter your PANcard number" id="number" required>
+            <label for="number">Adhar number</label>
+            <input type="number" placeholder="enter your Adhar number" id="number" required>
+
+            <p><b>Select your Gender</b></p>
+            <label for="Male">Male</label>
+            <input type="radio"  id="Male" name="gender" required>
+            <label for="Female">Female</label>
+            <input type="radio"  id="Female" name="gender" required>
+            <label for="Other">Other</label>
+            <input type="radio"  id="Other" name="gender" required>
+
+            <h3><b>2.Communication / Residence Address:</b></h3>
+            <label for="name">city:Distict</label>
+            <input type="text" placeholder="enter your city" id="name" required>
+            <label for="name">State</label>
+            <input type="text" placeholder="enter your State name" id="name" required>
+            <label for="name">Country</label>
+            <input type="text" placeholder="enter your Country name" id="name" required>
+            <label for="number">Phone number</label>
+            <input type="number" placeholder="enter yourphone number" id="number" required>
+            <label for="Email">Email</label>
+            <input type="Email" placeholder="enter your email" id="Email" required>
+
+            <label for="submit"></label>
+                <input type="submit" value="submit" class="submit"> <br>
+                <label for="reset"></label>
+                <input type="reset" value="reset" class="reset">
+        </form>
+       </center> 
+    </body>
+</html>
