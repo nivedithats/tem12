@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Article Display</title>
+<style>
+  #article-section {
+    display: none;
+    /* Additional CSS for styling the article */
+  }
+
+  .error {
+    color: red;
+  }
+
+  .error-border {
+    border: 1px solid red;
+  }
+</style>
+</head>
+<body>
+  <select id="topic-select">
+    <option value="tech">Tech</option>
+    <option value="news">News</option>
+    <!-- Add more options as needed -->
+  </select>
+
+  <div id="article-section">
+    <!-- Display the article here -->
+    <h2>Article Title</h2>
+    <p>Article content goes here.</p>
+  </div>
+
+  <form id="registration-form">
+    <input type="text" id="name-input" placeholder="Enter your name">
+    <input type="text" id="phone-input" placeholder="Enter your phone number">
+    <button type="submit">Submit</button>
+  </form>
+
+  <div id="name-error" class="error"></div>
+  <div id="phone-error" class="error"></div>
+
+<script>
+  const topicSelect = document.getElementById('topic-select');
+  const articleSection = document.getElementById('article-section');
+  const nameInput = document.getElementById('name-input');
+  const phoneInput = document.getElementById('phone-input');
+  const nameError = document.getElementById('name-error');
+  const phoneError = document.getElementById('phone-error');
+
+  topicSelect.addEventListener('change', function() {
+    const selectedTopic = this.value;
+    // Here you can fetch and display the article based on the selected topic
+    articleSection.style.display = 'block'; // Display the article section
+  });
+
+  document.getElementById('registration-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Reset errors
+    nameError.textContent = '';
+    phoneError.textContent = '';
+    nameInput.classList.remove('error-border');
+    phoneInput.classList.remove('error-border');
+
+    // Validate name
+    if (nameInput.value.trim() === '') {
+      nameError.textContent = 'Please enter your name';
+      nameInput.classList.add('error-border');
+    }
+
+    // Validate phone number
+    const phoneNumber = Number(phoneInput.value);
+    if (isNaN(phoneNumber)) {
+      phoneError.textContent = 'Please enter a valid phone number';
+      phoneInput.classList.add('error-border');
+    } else if (phoneInput.value.trim().length !== 10) {
+      phoneError.textContent = 'Phone number should be exactly 10 digits';
+      phoneInput.classList.add('error-border');
+    }
+  });
+</script>
+</body>
+</html>
